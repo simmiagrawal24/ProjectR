@@ -36,7 +36,7 @@ def find_proj(request):
     
     return render(request, 'ProjectR-main/search_project.html', {'projs':projs})
 
-def profile(request, no):
+def profile(request):
 
     student = stud()
 
