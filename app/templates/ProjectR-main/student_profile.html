@@ -9,34 +9,34 @@
   </head>
   <body >
     <div class="col-12">
-      <a href="Home_page.html" ><button type="button" class="btn btn-secondary">Back</button></a>
+      <a href="http://127.0.0.1:8000/projR/home/" ><button type="button" class="btn btn-secondary">Back</button></a>
     </div>
     <p style="font-weight:900; font-size: 50px; text-align: center;">PROFILE</p>
     <form class="row g-3"  style="margin-left: 50px;margin-top: 10px; margin-right: 50px; margin-bottom: 10px;">
         <div class="col-12" >
-          About<br><textarea cols="30" rows="5" class="form-control"></textarea>
+          About<br><textarea cols="30" rows="5" class="form-control" placeholder={{student.about}}></textarea>
         </div>
         <div class="col-12" >
-          Skills<br><textarea cols="10" rows="5" class="form-control"></textarea>
+          Skills<br><textarea cols="10" rows="5" class="form-control" placeholder={{student.skill}}></textarea>
         </div>
         
         <div class="col-md-6">
           Certifications <br>
+          <input type="url" class="form-control" placeholder={{student.cert}}>
           <input type="url" class="form-control" >
           <input type="url" class="form-control" >
-          <input type="url" class="form-control" >
         </div>
         <div class="col-12" >
-          Experience<br><textarea cols="30" rows="5" class="form-control"></textarea>
+          Experience<br><textarea cols="30" rows="5" class="form-control" placeholder={{student.exp}}></textarea>
         </div>
         <div class="col-12" >
-          Languages<br><input type="text" class="form-control"></textarea>
+          Languages<br><input type="text" class="form-control" placeholder={{student.lang}}></textarea>
         </div>
         <div class="col-12" >
-         Interested Fields<br><textarea cols="30" rows="5" class="form-control"></textarea>
+         Interested Fields<br><textarea cols="30" rows="5" class="form-control" placeholder={{student.interest}}></textarea>
         </div>
         <div class="col-12" >
-        Previous Projects<br><textarea cols="30" rows="5" class="form-control"></textarea>
+        Previous Projects<br><textarea cols="30" rows="5" class="form-control" placeholder={{student.prev}}></textarea>
         </div>
         
       </form>
